@@ -320,6 +320,9 @@ h6 {
     font-size:12px;
     font-weight:normal;
     color:#999;
+    position: fixed; 
+    bottom: 3%;
+    left: 50%;
 }
 
 /* Footer Icon Color */
