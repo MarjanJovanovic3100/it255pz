@@ -9,6 +9,7 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
 import { ClientsComponent } from './clients/clients.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { HeaderComponent } from './header/header.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 const routes: Routes = [
 { path: '', redirectTo: '/Home', pathMatch: 'full' },
@@ -19,6 +20,7 @@ const routes: Routes = [
 { path: 'Testimonials', component: TestimonialComponent },
 { path: 'Clients', component: ClientsComponent },
 { path: 'Pricing', component: PricingComponent },
+{ path: 'Contact us', component: ContactusComponent }
 ];
 
 

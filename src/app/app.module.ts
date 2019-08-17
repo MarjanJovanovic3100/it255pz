@@ -13,6 +13,10 @@ import { PricingComponent } from './pricing/pricing.component';
 import { HeaderComponent } from './header/header.component';
 import { SocialComponent } from './social/social.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { EmailService } from './email.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,13 +30,17 @@ import { NavigationComponent } from './navigation/navigation.component';
     PricingComponent,
     HeaderComponent,
     SocialComponent,
-    NavigationComponent
+    NavigationComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    ReactiveFormsModule,
+    FormsModule,
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [EmailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

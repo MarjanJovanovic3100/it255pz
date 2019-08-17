@@ -8,7 +8,7 @@ import * as $ from 'jquery';
 })
 export class NavigationComponent implements OnInit {
 
-  // activetab = 'home';
+  activetab = 'home';
 
   constructor() { }
 
@@ -51,8 +51,8 @@ export class NavigationComponent implements OnInit {
       // });
     });
   }
-  // getActiveTab(tabname: string){
-  //   this.activetab = tabname;
-  // }
+  getActiveTab(tabname: string){
+    this.activetab = tabname;
+  }
 
 }

@@ -24,19 +24,24 @@
             <nav id="nav-main">
                 <ul>
                     <li>
-                        <a routerLink="/Home" (click) = "getActiveTab('home')"[class.active]="activetab === 'home'">Početna</a>
+                        <a routerLink="/Home" (click)="getActiveTab('home')"
+                            [class.active]="activetab === 'home'">Početna</a>
                     </li>
                     <li>
-                        <a routerLink="/About" (click) = "getActiveTab('about')"[class.active]="activetab === 'about'">O nama</a>
+                        <a routerLink="/About" (click)="getActiveTab('about')" [class.active]="activetab === 'about'">O
+                            nama</a>
                     </li>
                     <li>
-                        <a routerLink="/Gallery" (click) = "getActiveTab('gallery')"[class.active]="activetab === 'gallery'">Galerija</a>
+                        <a routerLink="/Gallery" (click)="getActiveTab('gallery')"
+                            [class.active]="activetab === 'gallery'">Galerija</a>
                     </li>
                     <li>
-                        <a routerLink="/Services" (click) = "getActiveTab('services')"[class.active]="activetab === 'services'">Osnivač</a>
+                        <a routerLink="/Services" (click)="getActiveTab('services')"
+                            [class.active]="activetab === 'services'">Osnivač</a>
                     </li>
                     <li>
-                        <a routerLink="/Testimonials" (click) = "getActiveTab('testimonials')"[class.active]="activetab === 'testimonials'">Naši korisnici</a>
+                        <a routerLink="/Testimonials" (click)="getActiveTab('testimonials')"
+                            [class.active]="activetab === 'testimonials'">Naši korisnici</a>
                     </li>
                     <!-- <li>
                         <a routerLink="/Clients" (click) = "getActiveTab('clients')"[class.active]="activetab === 'clients'">Clients</a>
@@ -44,6 +49,10 @@
                     <li>
                         <a routerLink="/Pricing" (click) = "getActiveTab('pricing')"[class.active]="activetab === 'pricing'">Cene usluga</a>
                     </li>
+                    <li>
+                        <a routerLink="/Contact us" (click) = "getActiveTab('contactus')"[class.active]="activetab === 'contactus'">Kontaktirajte nas</a>
+                    </li>
+                
                 </ul>
             </nav>
             <!-- End of Main Navigation -->

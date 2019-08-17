@@ -123,11 +123,36 @@ a:hover, #header.nav-solid nav a:hover {
 
 /* Banner Background and Text Colors */
 
-#banner {
+/* #banner {
     background: url("assets/images/bannerImages/bannerImage1.jpg") no-repeat center top;
+    height: 100%;
     background-size:cover;
-}
+} */
 
+/* mobile */
+@media screen and (max-width: 770px) {
+    #banner {
+        background: url("assets/images/bannerImages/bannerImage1.jpg") no-repeat;
+        background-position: center;
+        left: -19vw;
+        top: 35vh;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-size: contain;
+    }
+}
+@media screen and (min-width: 771px) {
+    #banner {
+        background: url("assets/images/bannerImages/bannerImage1.jpg") no-repeat center center;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        padding: 200px;
+        top:5vh;
+        background-size:contain;
+    }
+}
 
 /*------------------------------------------------------------------------------------------*/
 /* 5. Typography */
